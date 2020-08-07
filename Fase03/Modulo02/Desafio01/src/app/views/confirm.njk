@@ -1,0 +1,14 @@
+<script>
+    /* Função para confirmar se o usuário deseja 
+       ou não excluir o professor ou estudante. 
+    */
+    
+    const form2 = document.querySelector(".form2")
+    form2.addEventListener("submit", function(event){
+        const confirma = confirm('Deseja deletar?')
+
+        if (!confirma){
+            event.preventDefault()
+        }
+    })
+</script>

@@ -1,0 +1,24 @@
+{
+    "teacher": [
+        {
+            "id": 1,
+            "avatar_url": "https://google.com",
+            "name": "Andressa Gomes",
+            "data_nasc": 909360000000,
+            "escolaridade": "Ensino Superior Completo",
+            "aula": "presencial",
+            "area": "JavaScript, HTML, CSS",
+            "created_at": 1593440597577
+        },
+        {
+            "id": 2,
+            "avatar_url": "https://google.com",
+            "name": "Andressa Gomes",
+            "data_nasc": 909360000000,
+            "escolaridade": "Ensino Médio Completo",
+            "aula": "presencial",
+            "area": "Matematica",
+            "created_at": 1593440801540
+        }
+    ]
+}

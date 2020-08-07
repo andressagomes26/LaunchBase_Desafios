@@ -1,0 +1,61 @@
+<!-- Página para mostrar dados de um estudante -->
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Aluno</title>
+{% endblock %}
+
+{% block content %}
+
+    <form class="card" method='POST' action='/students'>
+        <section class ='avatar' style='background:url({{ estudante.avatar_url }}) no-repeat center center / cover'></section>
+        <section class="details">
+            <h3>Aluno</h3>
+            
+            <!-- Nome -->
+            <div class="item">
+                <div>Nome Completo</div>
+                <div>
+                    {{ estudante.name }}
+                </div>
+            </div>
+
+            <!-- EMAIL -->
+            <div class="item">
+                <div>Email</div>
+                <div>
+                    {{ estudante.email }}
+                </div>
+            </div>
+
+            <!-- Aniversário -->
+            <div class="item">
+                <div>Idade</div>
+                <div>
+                    {{ estudante.data_nasc }}
+                </div>
+            </div>
+
+            <!-- Ano Escolar -->
+            <div class="item">
+                <div>Ano Escolar</div>
+                <div>
+                    {{ estudante.ano }}
+                </div>
+            </div>
+
+            <!-- Carga Horária -->
+            <div class="item">
+                <div>Carga Horária Semanal</div>
+                <div>
+                    {{ estudante.horas}} horas semanais
+                </div>
+            </div>
+
+            <!-- Botão -->
+            <a class='button' href='/students/{{estudante.id}}/edit'>Editar</a>
+            
+        </section>
+    </form>
+
+{% endblock %}

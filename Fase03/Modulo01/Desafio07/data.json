@@ -1,0 +1,63 @@
+{
+    "students": [
+        {
+            "id": 1,
+            "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
+            "name": "Andressa Gomes",
+            "email": "andressa@hotmail.com",
+            "data_nasc": 909360000000,
+            "ano": "medio1",
+            "horas": "20"
+        },
+        {
+            "id": 2,
+            "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
+            "name": "Carlos Augusto",
+            "email": "carlos@gmail.com",
+            "data_nasc": 840153600000,
+            "ano": "medio3",
+            "horas": "40"
+        }
+    ],
+    "teacher": [
+        {
+            "id": 1,
+            "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
+            "name": "Andressa Gomes Moreira",
+            "data_nasc": 909360000000,
+            "escolaridade": "Doutorado",
+            "aula": "presencial",
+            "area": [
+                "JavaScript",
+                " CSS",
+                " HTML5"
+            ],
+            "created_at": 1593657522394
+        },
+        {
+            "id": 2,
+            "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
+            "name": "Marinete Moura Gomes",
+            "data_nasc": -18316800000,
+            "escolaridade": "Medio",
+            "aula": "distancia",
+            "area": [
+                "Infantil III",
+                " Infatil IV"
+            ],
+            "created_at": 1593724097042
+        },
+        {
+            "id": 3,
+            "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
+            "name": "Carlos Augusto",
+            "data_nasc": 840153600000,
+            "escolaridade": "Mestrado",
+            "aula": "presencial",
+            "area": [
+                "Telecomunicações"
+            ],
+            "created_at": 1593907620228
+        }
+    ]
+}

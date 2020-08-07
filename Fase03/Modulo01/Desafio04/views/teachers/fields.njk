@@ -1,0 +1,85 @@
+<!-- Avatar_url -->
+<div class="item">
+    <div>Avatar URL</div>
+    <div>
+        <input 
+            type="url" 
+            name="avatar_url" 
+            placeholder='https://'
+            value='{{ professor.avatar_url }}'
+        >
+    </div>
+</div>
+
+<!-- Nome -->
+<div class="item">
+    <div>Nome Completo</div>
+    <div>
+        <input 
+            type="text" 
+            name="name" 
+            placeholder='Nome'
+            value='{{ professor.name }}'
+        >
+    </div>
+</div>
+
+<!-- Data de nascimento -->
+<div class="item">
+    <div>Data de nascimento</div>
+    <div>
+        <input 
+            type="date" 
+            name="data_nasc"
+            value='{{ professor.data_nasc }}'
+        >
+    </div>
+</div>
+
+<!-- Grau de Escolaridade -->
+<div class="item">
+    <div>Grau de Escolaridade</div>
+    <div>
+        {{ professor.escolaridade }}
+    </div>
+</div>
+
+<!-- Tipo de aula -->
+<div class="item">
+    <div>Tipo de aula</div>
+    <div>    
+        <span>
+            <input 
+                type="radio" 
+                name='aula' 
+                value="presencial" 
+                {% if professor.aula == 'presencial' %}
+                    checked
+                {% endif %}
+            >Presencial
+        </span>
+        <span>
+            <input 
+                type="radio" 
+                name='aula' 
+                value="distancia"
+                {% if professor.aula == 'distancia' %}
+                    checked
+                {% endif %}
+            >À distância
+        </span>
+    </div>
+</div>
+
+<!-- Área de atuação -->
+<div class="item">
+    <div>Área de atuação</div>
+    <div>
+        {% for a in professor.area %}
+            <span>{{ a }}</span>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- Botão -->
+<button type="submit">Salvar</button>
