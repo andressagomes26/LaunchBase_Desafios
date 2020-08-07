@@ -1,0 +1,47 @@
+{% extends "layout.njk" %}
+
+{% block titulo %}
+    <title>Conteúdos</title>
+{% endblock %}
+
+{% block contentsobre %}
+    <section class="conteudos">
+
+        <div class="cont" id='starter'>
+            <img src="https://skylab.rocketseat.com.br/static/64c237ccff807c054339a62d53b4b402.svg" alt="" class="imagem">
+            <div class="informacoes">
+                <p class="modulos1">5 módulos</p>
+                <p class="valor1">Gratuito</p>
+            </div>
+        </div>
+
+        <div class="cont" id='launchbase'>
+            <img src="https://skylab.rocketseat.com.br/static/0828532024cb46921a6b5e941f8d788d.svg" alt="" class="imagem">
+            <div class="informacoes">
+                <p class="modulos2">8 módulos</p>
+                <p class="valor2">r$ 960,00</p>
+            </div>
+        </div>
+
+        <div class="cont" id='gostack'>
+            <img src="https://skylab.rocketseat.com.br/static/83a178a0653dab1d55e2ed7946465975.svg" alt="" class="imagem">
+            <div class="informacoes">
+                <p class="modulos3">9 módulos</p>
+                <p class="valor3">r$ 2000,00</p>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="modal-overlay">
+        <div class='modal'>
+            <a class='material-icons' id='botao'>close</a>
+            <span class="material-icons" id='max'>maximize</span>
+            <div class='modal-content'>
+                <iframe id= 'iframe' src='' frameborder='0'></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+{% endblock %}

@@ -1,0 +1,122 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+
+*{
+    padding: 0;
+    margin: 0;
+    border:0;
+}
+
+body{
+    /*background: #D8BFD8;*/
+    background: black;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+header{
+    padding: 30px;
+    text-align: center;
+    border: 3px solid rgba(220,20,60,0.05);
+    background: rgba(75,0,130, 0.2);
+}
+
+header a{
+    font-size: 18px;
+    line-height:28px;
+
+    text-decoration: none;
+    /*color: black;*/
+    color: #4B0082;
+    margin: 0 35px;
+
+}
+
+.links a:hover{
+    color: #FF1493;
+    transition: color 200ms;
+    font-size: 22px;
+    transition: ease-in-out;
+}
+
+.center{
+    text-align: center;
+}
+
+.center img{
+    margin: 32px 0 32px 0;
+    border-radius: 50%;
+    height: 250px;
+    border: 3px solid #4B0082;
+}
+
+.center h1{
+    text-decoration: blink;
+    color: #4B0082;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.center p{
+    color: rgb(75, 0, 130);
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 500px;
+    margin: 8px auto;
+    padding-bottom: 40px;
+}
+
+.text{
+    margin: 0px;
+    background: rgba(76, 0, 130, 0.151);
+    border-top: 1px solid rgba(255, 20, 145, 0.411);
+    border-bottom: 1px solid rgba(255, 20, 145, 0.411);
+    color: rgba(81, 17, 199, 0.582); 
+
+}
+
+.text h2{
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+ul {
+    /*list-style-type: none; ->Tira as bolinhas da lista*/
+    margin-left: 855px;
+    margin-top: 38px;
+    padding: 0;
+    overflow: hidden;   /*O estouro é cortado e o restante do conteúdo fica invisível*/
+    text-align: center;
+}
+
+li {
+    float: left; /*Pesquisar*/
+    margin:35px;
+    
+}
+
+li a{
+    font-size: 16px;
+    text-decoration: none;
+}
+
+footer{
+    margin: 60px;
+    text-align: center;
+    color: white;
+}
+
+footer a{
+    color: #4B0082;
+    font-size: 18px;
+    line-height:28px;
+    text-decoration: none;
+    margin: 0 60px;
+    border-bottom: 1px solid #4B0082;
+}
+

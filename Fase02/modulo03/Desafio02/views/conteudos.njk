@@ -1,0 +1,33 @@
+{% extends "layout.njk" %}
+
+{% block titulo %}
+    <title>Conteúdos</title>
+{% endblock %}
+
+{% block contentsobre %}
+    <section class="conteudos">
+    
+        {% for info in infos %}
+            <div class="cont" id='{{ info.id }}'>
+                <img src="{{ info.foto }}" alt="" class="imagem">
+                <div class="informacoes">
+                    <p class="modulos1">{{ info.modulos }}</p>
+                    <p class="valor1">{{ info.valor}} </p>
+                </div>
+            </div>
+        {% endfor %}
+
+    </section>
+
+    <div class="modal-overlay">
+        <div class='modal'>
+            <a class='material-icons' id='botao'>close</a>
+            <span class="material-icons" id='max'>maximize</span>
+            <div class='modal-content'>
+                <iframe id= 'iframe' src='' frameborder='0'></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+{% endblock %}

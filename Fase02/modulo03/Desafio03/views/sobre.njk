@@ -1,0 +1,35 @@
+{% extends "layout.njk" %}
+
+{% block titulo %}
+    <title>Sobre</title>
+{% endblock %}
+
+{% block contentsobre %}
+    <div class='center'>
+        
+        <img src='{{ about.imagem }}' alt='Rocketeseat'>
+        <h1>{{ about.titulo }}<h1>
+        <p>{{ about.desc1 }}</p>
+    </div>
+
+    <div class = 'text'>
+        <h2>{{ about.desc2 }}</h2>
+        <ul>
+            <div class='links'>
+                {% for link1 in about.links1 %}
+                    <li><a href='{{ link1.url }}' target='blank'>{{ link1.name }}</a></li>
+                {% endfor %}
+                
+            </div>
+        </ul>
+        
+    </div>
+
+    <div class='links'>
+        <footer>
+            {% for link2 in about.links2 %}
+                <a href='{{ link2.url }}' target='_blank'>{{ link2.name }}</a>
+            {% endfor %}
+        </footer>
+    </div>
+{% endblock %}
