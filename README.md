@@ -12,10 +12,12 @@ O LaunchBase é um treinamento no formato de bootcamp que tem o objetivo de abor
 - Visual Studio Code IDE;
 
 ## Tecnologias <img src = "https://png.pngtree.com/png-clipart/20191120/original/pngtree-rocket-vector-illustration-isolated-on-white-background-rocket-clip-art-png-image_5067341.jpg"  width="40" height="40">
-- JavaScript;
+
 - HTML;
 - CSS;
+- JavaScript;
 - Node.js;
+- NPM
 - Nunjucks.
 
 ## Instalaçõe
@@ -30,6 +32,24 @@ O LaunchBase é um treinamento no formato de bootcamp que tem o objetivo de abor
   ```
  
 ## Desafios <img src = "https://image.flaticon.com/icons/svg/1388/1388007.svg" width="30" height="30">
+
+* **Fase 2 - Módulo 1 -** Introdução a Programação WEB:
+
+  - **Desafio 01:** [Primeiros passos com JavaScript;](https://github.com/andressagomes26/LaunchBase-desafios/tree/master/modulo01/Desafio01)
+  - **Desafio 02:** [Lidando com objetos e vetores;](https://github.com/andressagomes26/LaunchBase-desafios/tree/master/modulo01/Desafio02)
+  - **Desafio 03:** [Funções e estruturas de repetição;](https://github.com/andressagomes26/LaunchBase-desafios/tree/master/modulo01/Desafio03)
+  - **Desafio 04:** [Aplicação: Operações bancárias.](https://github.com/andressagomes26/LaunchBase-desafios/tree/master/modulo01/Desafio04)
+
+* **Fase 2 - Módulo 2 -** Iniciando no Front-End
+  - **Desafio 01:** [Primeiro HTML;](https://github.com/andressagomes26/LaunchBase-desafios/tree/master/modulo02/Desafio01)
+  - **Desafio 02:** [Página de descrição;](https://github.com/andressagomes26/LaunchBase-desafios/tree/master/modulo02/Desafio02)
+  - **Desafio 03:** [Página de cursos e iframe.](https://github.com/andressagomes26/LaunchBase-desafios/tree/master/modulo02/Desafio03)
+  
+* **Fase 2 - Módulo 3 -** Iniciando no Back-end
+  - **Desafio 01:** [Primeiro servidor;](https://github.com/andressagomes26/LaunchBase-desafios/tree/master/modulo03/Desafio01)
+  - **Desafio 02:** [Arquivos nunjucks e dados dinâmicos;](https://github.com/andressagomes26/LaunchBase-desafios/tree/master/modulo03/Desafio02)
+  - **Desafio 03:** [Página de descrição do curso.](https://github.com/andressagomes26/LaunchBase-desafios/tree/master/modulo03/Desafio03)
+  
 * **Fase 3 - Módulo 1 -** Controle de academia:
 
   - **Desafio 01:** [Header;](https://github.com/andressagomes26/LaunchBase-fase03-desafios/tree/master/Modulo01/Desafio01)
