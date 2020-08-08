@@ -35,20 +35,20 @@ O LaunchBase é um treinamento no formato de bootcamp que tem o objetivo de abor
 
 * **Fase 2 - Módulo 1 -** Introdução a Programação WEB:
 
-  - **Desafio 01:** [Primeiros passos com JavaScript;](https://github.com/andressagomes26/LaunchBase-desafios/tree/master/modulo01/Desafio01)
-  - **Desafio 02:** [Lidando com objetos e vetores;](https://github.com/andressagomes26/LaunchBase-desafios/tree/master/modulo01/Desafio02)
-  - **Desafio 03:** [Funções e estruturas de repetição;](https://github.com/andressagomes26/LaunchBase-desafios/tree/master/modulo01/Desafio03)
-  - **Desafio 04:** [Aplicação: Operações bancárias.](https://github.com/andressagomes26/LaunchBase-desafios/tree/master/modulo01/Desafio04)
+  - **Desafio 01:** [Primeiros passos com JavaScript;](https://github.com/andressagomes26/LaunchBase_Desafios/tree/master/Fase02/modulo01/Desafio01)
+  - **Desafio 02:** [Lidando com objetos e vetores;](https://github.com/andressagomes26/LaunchBase_Desafios/tree/master/Fase02/modulo01/Desafio02)
+  - **Desafio 03:** [Funções e estruturas de repetição;](https://github.com/andressagomes26/LaunchBase_Desafios/tree/master/Fase02/modulo01/Desafio03)
+  - **Desafio 04:** [Aplicação: Operações bancárias.](https://github.com/andressagomes26/LaunchBase_Desafios/tree/master/Fase02/modulo01/Desafio04)
 
 * **Fase 2 - Módulo 2 -** Iniciando no Front-End
-  - **Desafio 01:** [Primeiro HTML;](https://github.com/andressagomes26/LaunchBase-desafios/tree/master/modulo02/Desafio01)
-  - **Desafio 02:** [Página de descrição;](https://github.com/andressagomes26/LaunchBase-desafios/tree/master/modulo02/Desafio02)
-  - **Desafio 03:** [Página de cursos e iframe.](https://github.com/andressagomes26/LaunchBase-desafios/tree/master/modulo02/Desafio03)
+  - **Desafio 01:** [Primeiro HTML;](https://github.com/andressagomes26/LaunchBase_Desafios/tree/master/Fase02/modulo02/Desafio01)
+  - **Desafio 02:** [Página de descrição;](https://github.com/andressagomes26/LaunchBase_Desafios/tree/master/Fase02/modulo02/Desafio02)
+  - **Desafio 03:** [Página de cursos e iframe.](https://github.com/andressagomes26/LaunchBase_Desafios/tree/master/Fase02/modulo02/Desafio03)
   
 * **Fase 2 - Módulo 3 -** Iniciando no Back-end
-  - **Desafio 01:** [Primeiro servidor;](https://github.com/andressagomes26/LaunchBase-desafios/tree/master/modulo03/Desafio01)
-  - **Desafio 02:** [Arquivos nunjucks e dados dinâmicos;](https://github.com/andressagomes26/LaunchBase-desafios/tree/master/modulo03/Desafio02)
-  - **Desafio 03:** [Página de descrição do curso.](https://github.com/andressagomes26/LaunchBase-desafios/tree/master/modulo03/Desafio03)
+  - **Desafio 01:** [Primeiro servidor;](https://github.com/andressagomes26/LaunchBase_Desafios/tree/master/Fase02/modulo03/Desafio01)
+  - **Desafio 02:** [Arquivos nunjucks e dados dinâmicos;](https://github.com/andressagomes26/LaunchBase_Desafios/tree/master/Fase02/modulo03/Desafio02)
+  - **Desafio 03:** [Página de descrição do curso.](https://github.com/andressagomes26/LaunchBase_Desafios/tree/master/Fase02/modulo03/Desafio03)
   
 * **Fase 3 - Módulo 1 -** Controle de academia:
 
