@@ -1,0 +1,97 @@
+<!-- 
+    Organizando os dados que serão 
+    inclusos nas páginas: create e 
+    edit.
+-->
+
+<!-- Avatar_url -->
+<div class="item">
+    <div>Avatar URL</div>
+    <div>
+        <input 
+            type="url" 
+            name="avatar_url" 
+            placeholder='https://'
+            value='{{ professor.avatar_url }}'
+        >
+    </div>
+</div>
+
+<!-- Nome -->
+<div class="item">
+    <div>Nome Completo</div>
+    <div>
+        <input 
+            type="text" 
+            name="name" 
+            placeholder='Nome'
+            value='{{ professor.name }}'
+        >
+    </div>
+</div>
+
+<!-- Data de nascimento -->
+<div class="item">
+    <div>Data de nascimento</div>
+    <div>
+        <input 
+            type="date" 
+            name="data_nasc"
+            value='{{ professor.data_nasc }}'
+        >
+    </div>
+</div>
+
+<!-- Grau de Escolaridade -->
+<div class="item">
+    <div>Grau de Escolaridade</div>
+    <select name="escolaridade">
+        <option value='Medio' {% if professor.escolaridade == 'Medio' %}selected{% endif %}>Ensino Médio Completo</option>
+        <option value='Superior' {% if professor.escolaridade == 'Superior' %}selected{% endif %}>Ensino Superior Completo</option>
+        <option value='Mestrado'{% if professor.escolaridade == 'Mestrado' %}selected{% endif %}>Mestrado</option>
+        <option value='Doutorado'{% if professor.escolaridade == 'Doutorado' %}selected{% endif %}>Doutorado</option>
+    </select>
+</div>
+
+<!-- Tipo de aula -->
+<div class="item">
+    <div>Tipo de aula</div>
+    <div>    
+        <span>
+            <input 
+                type="radio" 
+                name='aula' 
+                value="presencial" 
+                {% if professor.aula == 'presencial' %}
+                    checked
+                {% endif %}
+            >Presencial
+        </span>
+        <span>
+            <input 
+                type="radio" 
+                name='aula' 
+                value="distancia"
+                {% if professor.aula == 'distancia' %}
+                    checked
+                {% endif %}
+            >À distância
+        </span>
+    </div>
+</div>
+
+<!-- Área de atuação -->
+<div class="item">
+    <div>Área de atuação</div>
+    <div>
+        <input 
+            type="text" 
+            name="area" 
+            placeholder='Insira as áreas separadas por vírgula'
+            value='{{ professor.area }}'
+        >
+    </div>
+</div>
+
+<!-- Botão -->
+<button class='button-salvar' type="submit">Salvar</button>
