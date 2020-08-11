@@ -4,12 +4,13 @@
 </p>
 
 
-# Bootcamp | LaunchBase | Desafios | novoooooooo
+# Bootcamp | LaunchBase | Desafios |
 
 O LaunchBase é um treinamento no formato de bootcamp que tem o objetivo de abordar as ferramentas e conceitos mais modernos de desenvolvimento Web. Desse modo, durante o curso são propostos diversos desafios que serão aqui resolvidos.
 
 ## Dependências
 - Visual Studio Code IDE;
+- Postbird;
 
 ## Tecnologias <img src = "https://png.pngtree.com/png-clipart/20191120/original/pngtree-rocket-vector-illustration-isolated-on-white-background-rocket-clip-art-png-image_5067341.jpg"  width="40" height="40">
 
@@ -17,8 +18,8 @@ O LaunchBase é um treinamento no formato de bootcamp que tem o objetivo de abor
 - CSS;
 - JavaScript;
 - Node.js;
-- NPM
-- Nunjucks.
+- NPM;
+- PostgreSQL.
 
 ## Instalaçõe
  -  Express:
