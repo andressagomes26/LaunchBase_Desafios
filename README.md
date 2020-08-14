@@ -4,7 +4,7 @@
 </p>
 
 
-# Bootcamp | LaunchBase | Desafios |
+#                                                           Bootcamp | LaunchBase | Desafios 
 
 O LaunchBase é um treinamento no formato de bootcamp que tem o objetivo de abordar as ferramentas e conceitos mais modernos de desenvolvimento Web. Desse modo, durante o curso são propostos diversos desafios que serão aqui resolvidos.
 
@@ -67,7 +67,7 @@ O LaunchBase é um treinamento no formato de bootcamp que tem o objetivo de abor
 * **Fase 3 - Módulo 2 -** Persistindo dados da aplicação:
 
   - **Desafio 01:** [Refatorando aplicação e configurando o BD;](https://github.com/andressagomes26/LaunchBase_Desafios/tree/master/Fase03/Modulo02/Desafio01)
-  - **Desafio 02:** [Interagindo com o BD;]()
+  - **Desafio 02:** [Interagindo com o BD;](https://github.com/andressagomes26/LaunchBase_Desafios/tree/master/Fase03/Modulo02/Desafio02)
   
 ## Status do Projeto
 - As resoluções dos desafios encontram-se em desenvolvimento.
