@@ -34,6 +34,7 @@ O LaunchBase é um treinamento no formato de bootcamp que tem o objetivo de abor
  
 ## Desafios <img src = "https://image.flaticon.com/icons/svg/1388/1388007.svg" width="30" height="30">
 
+ ### Fase 2
 * **Fase 2 - Módulo 1 -** Introdução a Programação WEB:
 
   - **Desafio 01:** [Primeiros passos com JavaScript;](https://github.com/andressagomes26/LaunchBase_Desafios/tree/master/Fase02/modulo01/Desafio01)
@@ -51,6 +52,8 @@ O LaunchBase é um treinamento no formato de bootcamp que tem o objetivo de abor
   - **Desafio 02:** [Arquivos nunjucks e dados dinâmicos;](https://github.com/andressagomes26/LaunchBase_Desafios/tree/master/Fase02/modulo03/Desafio02)
   - **Desafio 03:** [Página de descrição do curso.](https://github.com/andressagomes26/LaunchBase_Desafios/tree/master/Fase02/modulo03/Desafio03)
   
+ ### Fase 3
+ 
 * **Fase 3 - Módulo 1 -** Controle de academia:
 
   - **Desafio 01:** [Header;](https://github.com/andressagomes26/LaunchBase-fase03-desafios/tree/master/Modulo01/Desafio01)
@@ -64,6 +67,7 @@ O LaunchBase é um treinamento no formato de bootcamp que tem o objetivo de abor
 * **Fase 3 - Módulo 2 -** Persistindo dados da aplicação:
 
   - **Desafio 01:** [Refatorando aplicação e configurando o BD;]()
+  - **Desafio 02:** [Interagindo com o BD;]()
   
 ## Status do Projeto
 - As resoluções dos desafios encontram-se em desenvolvimento.
