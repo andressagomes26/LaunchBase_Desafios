@@ -1,0 +1,19 @@
+<!-- Página para cadastrar novo Estudante -->
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Cadastrar Aluno(a)</title>
+{% endblock %}
+
+{% block content %}
+
+    <form class="card" method='POST' action='/students'>
+        <section class ='avatar' style='background:url("https://source.unsplash.com/collection/10553730/500x500") no-repeat center center / cover'></section>
+        <section class="details">
+            <h3>Novo Aluno</h3>
+
+            {% include 'students/fields.njk' %}
+        </section>
+    </form>
+
+{% endblock %}
