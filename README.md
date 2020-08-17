@@ -71,7 +71,8 @@ O LaunchBase é um treinamento no formato de bootcamp que tem o objetivo de abor
   - **Desafio 01:** [Refatorando aplicação e configurando o BD;](https://github.com/andressagomes26/LaunchBase_Desafios/tree/master/Fase03/Modulo02/Desafio01)
   - **Desafio 02:** [Interagindo com o BD;](https://github.com/andressagomes26/LaunchBase_Desafios/tree/master/Fase03/Modulo02/Desafio02)
   - **Desafio 03:** [Relacionamentos e filtros no BD;](https://github.com/andressagomes26/LaunchBase_Desafios/tree/master/Fase03/Modulo02/Desafio03)
-  
+  - **Desafio 04:**
+
 ## Status do Projeto
 - As resoluções dos desafios encontram-se em desenvolvimento.
 
