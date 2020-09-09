@@ -1,0 +1,102 @@
+<!-- 
+    Organizando os dados que serão 
+    inclusos nas páginas: create e 
+    edit.
+-->
+
+<!-- Avatar_url -->
+<div class="item">
+    <div>Avatar URL</div>
+    <div>
+        <input 
+            type="url" 
+            name="avatar_url" 
+            placeholder='https://'
+            value='{{ estudante.avatar_url }}'
+        >
+    </div>
+</div>
+
+<!-- Nome -->
+<div class="item">
+    <div>Nome Completo</div>
+    <div>
+        <input 
+            type="text" 
+            name="name" 
+            placeholder='Nome'
+            value='{{ estudante.name }}'
+        >
+    </div>
+</div>
+
+<!-- Email -->
+<div class="item">
+    <div>Email</div>
+    <div>
+        <input 
+            type="text" 
+            name="email" 
+            placeholder='Email'
+            value='{{ estudante.email }}'
+        >
+    </div>
+</div>
+
+<!-- Data de nascimento -->
+<div class="item">
+    <div>Data de nascimento</div>
+    <div>
+        <input 
+            type="date" 
+            name="data_nasc"
+            value='{{ estudante.data_nasc }}'
+        >
+    </div>
+</div>
+
+<!-- Ano Escolar -->
+<div class="item">
+    <div>Ano Escolar</div>
+    <div>
+        <select name="ano">
+            <option value="fund5" {% if estudante.ano == 'fund5' %}selected{% endif %}>5° ano - Ensino Fundamental</option>
+            <option value="fund6" {% if estudante.ano == 'fund6' %}selected{% endif %}>6° ano - Ensino Fundamental</option>
+            <option value="fund7" {% if estudante.ano == 'fund7' %}selected{% endif %}>7° ano - Ensino Fundamental</option>
+            <option value="fund8" {% if estudante.ano == 'fund8' %}selected{% endif %}>8° ano - Ensino Fundamental</option>
+            <option value="fund9" {% if estudante.ano == 'fund9' %}selected{% endif %}>9° ano - Ensino Fundamental</option>
+
+            <option value="medio1" {% if estudante.ano == 'medio1' %}selected{% endif %}>1° ano - Ensino Médio</option>
+            <option value="medio2" {% if estudante.ano == 'medio2' %}selected{% endif %}>2° ano - Ensino Médio</option>
+            <option value="medio3" {% if estudante.ano == 'medio3' %}selected{% endif %}>3° ano - Ensino Médio</option>
+
+        </select>
+    </div>
+</div>
+
+<!-- Carga Horária -->
+<div class="item">
+    <div>Carga Horária Semanal</div>
+    <div>
+        <input 
+            type="number" 
+            name="horas"
+            value='{{ estudante.horas }}'
+        >
+    </div>
+</div>
+
+<!-- Professor selecionado -->
+<div class="item">
+    <div>Professor</div>
+    <div>
+        <select name="professorSelected">
+            {% for professorSelected in studentOptions %}
+                <option value='{{professorSelected.id}}' {% if estudante.teacher_id == professorSelected.id %}selected{% endif %}>{{professorSelected.name}}</option>
+            {% endfor %}
+        </select>
+    </div>
+</div>
+
+<!-- Botão -->
+<button class='button-salvar' type="submit">Salvar</button>

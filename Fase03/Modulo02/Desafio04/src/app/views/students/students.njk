@@ -1,0 +1,87 @@
+<!-- 
+    Página para exibir todos os estudantes
+    cadastrados, incluindo dados como: avatar,
+    nome, email, ano escolar.
+ -->
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Students</title>
+{% endblock %}
+
+{% block content %}
+
+    <div class="card card-table">
+
+        <div class="header">
+            <!--class='button-novo'-->
+            <a class='button-novo' href="/students/create">Novo</a>
+            <form action="/students" method="get">
+                <input type="text" name='filter' placeholder='Nome ou Email'>
+                <button class='button-novo' type="submit">Filtrar</button>
+            </form>
+        </div>
+        
+        <table width='200%'>
+            <thead>
+                <tr>
+                    <th>Nome Completo</th>
+                    <th>Email</th>
+                    <th>Ano Escolar</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+               <!-- <a class='button-novo' href="/students/create">Novo</a> -->
+                {% for aluno in estudante %}
+                    <tr>
+                        <td>
+                            <span style='background-image:url({{aluno.avatar_url}})'></span>
+                            {{aluno.name}}
+                        </td>
+                        <td>
+                            {{aluno.email}}
+                        </td>
+                        <td>
+                            {% if aluno.ano == 'fund5' %} 
+                                5° ano - Ensino Fundamental
+                            {% endif %}
+                            {% if aluno.ano == 'fund6' %} 
+                                6° ano - Ensino Fundamental
+                            {% endif %}
+                            {% if aluno.ano == 'fund7' %} 
+                                7° ano - Ensino Fundamental
+                            {% endif %}
+                            {% if aluno.ano == 'fund8' %} 
+                                8° ano - Ensino Fundamental
+                            {% endif %}             
+                            {% if aluno.ano == 'fund9' %} 
+                                9° ano - Ensino Fundamental
+                            {% endif %}
+                            {% if aluno.ano == 'medio1' %} 
+                                1° ano - Ensino Médio
+                            {% endif %}
+                            {% if aluno.ano == 'medio2' %} 
+                                2° ano - Ensino Médio
+                            {% endif %}
+                            {% if aluno.ano == 'medio3' %} 
+                                3° ano - Ensino Médio
+                            {% endif %}
+                            
+                        </td>
+                        <td>
+                            <a href="/students/{{aluno.id}}">Ver</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <div class="pagination"
+            data-total = {{pagination.total}}
+            data-page = {{pagination.page}}
+            data-filter = {{pagination.filter}}
+        ></div>
+    </div>
+
+{% endblock %}
