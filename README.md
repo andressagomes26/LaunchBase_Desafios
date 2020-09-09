@@ -22,7 +22,7 @@ O LaunchBase é um treinamento no formato de bootcamp que tem o objetivo de abor
 - Nunjucks;
 - PostgreSQL.
 
-## Instalaçõe
+## Instalações
  -  Express:
    ```bash
   $ npm install express
