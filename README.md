@@ -26,7 +26,7 @@ O LaunchBase é um treinamento no formato de bootcamp que tem o objetivo de abor
    ```bash
   $ npm install express
   ```
- 
+  
  - Nunjucks: 
   ```bash
   $ npm install nunjucks
@@ -76,6 +76,8 @@ O LaunchBase é um treinamento no formato de bootcamp que tem o objetivo de abor
 * **Fase 4 - Módulo 1 -** Launchstore:
 
   - **Desafio 01:** [Mini desafios.]()
+
+### Fase 5
 
 ## Status do Projeto
 - As resoluções dos desafios encontram-se em desenvolvimento.
