@@ -79,6 +79,8 @@ O LaunchBase é um treinamento no formato de bootcamp que tem o objetivo de abor
 
 ### Fase 5
 
+* **Fase 5 - Módulo 1 -**
+
 ## Status do Projeto
 - As resoluções dos desafios encontram-se em desenvolvimento.
 
