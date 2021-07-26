@@ -34,7 +34,7 @@ O LaunchBase é um treinamento no formato de bootcamp que tem o objetivo de abor
   
 ## Desafios <img src = "https://image.flaticon.com/icons/svg/1388/1388007.svg" width="30" height="30">
 
- ### Fase 2
+ ### Fase 02
 * **Fase 2 - Módulo 1 -** Introdução a Programação WEB:
 
   - **Desafio 01:** [Primeiros passos com JavaScript;](https://github.com/andressagomes26/LaunchBase_Desafios/tree/master/Fase02/modulo01/Desafio01)
