@@ -1,7 +1,5 @@
 <h1 align="center">  Bootcamp | LaunchBase | Aulas | Anotações </h1>
 
-Arquivo referente às anotações importantes realizadas durante o curso.
-
 ## Fase 02
 ### Módulo 01 - Iniciando com Progração Web
 
@@ -11,55 +9,71 @@ Nessa fase vamos dar os primeiros passos na programação web. Conheceremos conc
  
     ### Aula 1.1 - Iniciando com a programação web:
 * O que é Programação? 
- - Passar instruções para o computador (algoritmos);
- - Softwares;
- - Linguagens: Desktop, Mobile, Web;
+  - Passar instruções para o computador (algoritmos);
+  - Softwares;
+  - Linguagens: Desktop, Mobile, Web;
 
     ### Aula 1.2: Iniciando no JavaScript
 * Criar Variáveis: 
- - const nome_var = "valor_var"
+  - const nome_var = "valor_var"
 
 * Executar o arquivo JS:
- - Node: Motor da nossa máquina
- - caminho (apagar: /Users/andre/Desktop/LaunchBase-Desafios/LaunchBase_Desafios/Aulas/Fase02)
- - node index.js
-
+  - Node: Motor da nossa máquina
+  - caminho (apagar: /Users/andre/Desktop/LaunchBase-Desafios/LaunchBase_Desafios/Aulas/Fase02)
+   ```bash
+  node index.js
+  ```
 * Mostrar mensagem no terminal:
- - console.log()
-
+  ```bash
+  console.log()
+  ```
+- 
     ### Aula 1.3: Comentários, Strings e Numbers
 * Sintaxe em JavaScript:
 * Comentários: 
- - // Linha Única
- - /* Múltiplas Linhas*/
-
-* Template String: `${}`
+  ```bash
+      // Linha Única
+      /* Múltiplas Linhas*/
+  ```
+ 
+* Template String
+  ```bash
+      `${}`
+  ```
 
 * Tipos de Variáveis
  - Strings / Numbers
- - typeof nome_Var
+   ```bash
+      typeof nome_Var
+    ```
 
     ### Aula 1.4: Fazendo cálculos com JavaScript
 
     ### Aula 1.5: Condicionais
 * Sintaxe condicional:
- - if (condiçãoTrue){
-      ...
-   } else{
-       ...
-   }
-
+   ```bash
+      if (condiçãoTrue){
+          ...
+      } else{
+          ...
+      }
+   ```
+   
     ### Aula 1.6: Operadores relacionais e comparativos
 * Operadores de Comparação:
- - > Maior, < Menor
- - >= Maior igual a, <= Menor igual a
- - == Igual a, === Igual e do mesmo tipo
- - != Diferente de, !== Diferente, inclusive do tipo
-
-
+   ```bash
+          >= Maior igual a, <= Menor igual a
+          == Igual a, === Igual e do mesmo tipo
+          != Diferente de, !== Diferente, inclusive do tipo
+          > Maior, < Menor
+   ```
+   
     ### Aula 1.7: Operadores lógicos e aritméticos
 * Operadores lógicos
- - Agrupar operações
- - &&: (E) Ambas condições devem ser verdadeiras
- - ||: (OU) Uma das condições deve ser verdadeira
- - ! : (Não) Nega uma condição
+  - Agrupar operações
+   ```bash
+          &&: (E) Ambas condições devem ser verdadeiras
+          ||: (OU) Uma das condições deve ser verdadeira
+          ! : (Não) Nega uma condição
+   ```
+
