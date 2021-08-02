@@ -47,8 +47,6 @@ Nessa fase vamos dar os primeiros passos na programação web. Conheceremos conc
       typeof nome_Var
     ```
 
-    ### Aula 1.4: Fazendo cálculos com JavaScript
-
     ### Aula 1.5: Condicionais
 * Sintaxe condicional:
    ```bash
