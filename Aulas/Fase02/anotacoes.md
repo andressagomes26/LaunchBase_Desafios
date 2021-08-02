@@ -77,3 +77,26 @@ Nessa fase vamos dar os primeiros passos na programação web. Conheceremos conc
           ! : (Não) Nega uma condição
    ```
 
+    ### Aula 2.1: Objetos
+* Contém propriedades/funcionalidades (métodos)
+   ```bash
+          const objeto = {
+              propriedade1:"valor1",
+              propriedade2:"valor2",
+          }
+   ```
+* Acessar as propriedades:
+   ```bash 
+          objeto.propriedade1
+   ```
+
+    ### Aula 2.2: Array
+* Contém propriedades/funcionalidades (métodos)
+   ```bash
+          const array = ["pos0", "pos1", "...", "posn"]
+   ```
+* Acessar as pela posição do vetor:
+   ```bash 
+          array[0]
+          array[1]
+   ```
