@@ -93,12 +93,12 @@ Nessa fase vamos dar os primeiros passos na programação web. Conheceremos conc
     ### Aula 2.2: Array
 * Contém propriedades/funcionalidades (métodos)
    ```bash
-          const array = ["pos0", "pos1", "...", "posn"]
+      const array = ["pos0", "pos1", "...", "posn"]
    ```
 * Acessar as pela posição do vetor:
    ```bash 
-          array[0]
-          array[1]
+      array[0]
+      array[1]
    ```
   ```
 * Adicionar uma propriedade em um objeto que está na posição 0 do array:
@@ -146,10 +146,14 @@ Nessa fase vamos dar os primeiros passos na programação web. Conheceremos conc
 
     ### Observações
 ```.join()``` = Junta todos os elementos de um array e retorna uma string
+
 ```.split()``` = Divide uma string em substrings através de um separador
+
 ```.replace(".", ",")``` = Troca um valor pelo outro
 
   ### Observações 2
 ```for ... of ``` = Loop em uma variável ou array
+
 ```for ... in ``` = Loop em um objeto
+
 ```indexOf("")``` = Verifica se há uma string em um array.
