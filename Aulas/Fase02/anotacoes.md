@@ -47,6 +47,8 @@ Nessa fase vamos dar os primeiros passos na programação web. Conheceremos conc
       typeof nome_Var
     ```
 
+    ### Aula 1.4: Fazendo cálculos com JavaScript
+
     ### Aula 1.5: Condicionais
 * Sintaxe condicional:
    ```bash
@@ -98,3 +100,56 @@ Nessa fase vamos dar os primeiros passos na programação web. Conheceremos conc
           array[0]
           array[1]
    ```
+  ```
+* Adicionar uma propriedade em um objeto que está na posição 0 do array:
+   ```bash 
+      array[0].propriedade = "valor"
+   ```
+
+    ### Aula 3.1: Funções e Métodos
+* Reaproveitamento de código
+* Sintaxe função:
+   ```bash 
+      function nome_func(parametro){
+        return ...
+      }
+   ```
+
+* Chamada da função:
+   ```bash 
+      nome_func(argumento)
+      }
+   ```
+
+* Método:
+   ```bash 
+      console.log() // Console = Objeto ; Log = Função/Método ; (...) = argumentos
+   ```
+
+    ### Aula 3.2: Estrutura de repetição
+* For
+* Sintaxe função:
+   ```bash 
+      for(let i=0; i<10; i++){
+        ...
+      }
+   ```
+* Saber o tamanho de um vetor:
+   ```bash 
+      nameVetor.length
+   ```
+
+    ### Aula 3.3: Escopo
+* Variáveis existem apenas dentro do escopo em que foram criadas
+* Variáveis que são criadas no escopo global podem ser acessadas dentro de outros escopos
+* Uma função existe acaba assim que acha um `return`
+
+    ### Observações
+```.join()``` = Junta todos os elementos de um array e retorna uma string
+```.split()``` = Divide uma string em substrings através de um separador
+```.replace(".", ",")``` = Troca um valor pelo outro
+
+  ### Observações 2
+```for ... of ``` = Loop em uma variável ou array
+```for ... in ``` = Loop em um objeto
+```indexOf("")``` = Verifica se há uma string em um array.
