@@ -8,6 +8,10 @@
 O LaunchBase é um treinamento no formato de bootcamp que tem o objetivo de abordar as ferramentas e conceitos mais modernos de desenvolvimento Web. Desse modo, durante o curso são propostos diversos desafios que serão aqui resolvidos.
 
 ## Dependências
+- NPM
+- Express
+- Nodemon
+- Nunjucks
 - Visual Studio Code IDE;
 - Postbird;
 
@@ -22,7 +26,17 @@ O LaunchBase é um treinamento no formato de bootcamp que tem o objetivo de abor
 - PostgreSQL.
 
 ## Instalações
+ - NPM:
+   ```bash
+  $ npm init -y
+  ```
+
  -  Express:
+   ```bash
+  $ npm install express
+  ```
+  
+-  Express:
    ```bash
   $ npm install express
   ```
