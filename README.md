@@ -26,20 +26,21 @@ O LaunchBase é um treinamento no formato de bootcamp que tem o objetivo de abor
 - PostgreSQL.
 
 ## Instalações
+
  - NPM:
-   ```bash
-  $ npm init -y
-  ```
+    ```bash
+   $ npm init -y
+   ```
 
  -  Express:
    ```bash
   $ npm install express
   ```
   
--  Express:
-   ```bash
-  $ npm install express
-  ```
+-  Nodemon:
+    ```bash
+   $ npm install -D nodemon
+   ```
   
  - Nunjucks: 
   ```bash
