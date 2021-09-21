@@ -33,19 +33,19 @@ O LaunchBase é um treinamento no formato de bootcamp que tem o objetivo de abor
    ```
 
  -  Express:
-   ```bash
-  $ npm install express
-  ```
-  
--  Nodemon:
     ```bash
-   $ npm install -D nodemon
-   ```
+    $ npm install express
+    ```
   
- - Nunjucks: 
-  ```bash
-  $ npm install nunjucks
-  ```
+-  Nodemon:    
+    ```bash
+    $ npm install -D nodemon
+    ```
+  
+ - Nunjucks:     
+    ```bash
+    $ npm install nunjucks    
+    ```
   
 ## Desafios <img src = "https://image.flaticon.com/icons/svg/1388/1388007.svg" width="30" height="30">
 
