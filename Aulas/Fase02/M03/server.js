@@ -29,13 +29,18 @@
         3. Configurar a template engine: motor de view = html; 
         4. Configurar com nunjucks:
         nunjucks.configure(caminho, opções)
-
+            -> autoescape: false   = serve para fazer com que o nunkjucks reconheça os cógidos html que são colocados dentro de variáveis
     // Configurar o servidor para usar arquivos estáticos:
         1. server.use(express.static("puclic"))
 
-    / Importar um arquivo que não foi instalado pelo nunjucks
+    // Importar um arquivo que não foi instalado pelo nunjucks
         1. const videos = require("./data")
-*/
+
+    // Recuperar dados do Back-end e enviá-los para o front-end (na pág 'potfolio'):
+        1. server.get("/portfolio", function(req, res){
+                return res.render("portfolio", { itens: video })
+            })
+        */
 
 // Importar uma dependência (express)
 const express = require("express")
@@ -55,16 +60,29 @@ server.use(express.static("public"))
 // Configurar a template engine:
 server.set("view engine", "njk")
 nunjucks.configure("views",{
-    express: server
+    express: server,
+    autoescape: false,
+    noCache: true
 })
 
 // Criando rotas:
 server.get("/", function(req, res){
-    return res.render("about")
+    const about = {
+        avatar_url: "https://avatars.githubusercontent.com/u/60404990?v=4",
+        name: "Andressa Gomes",
+        role: "Diagramadora web",
+        description: 'Diagramadora web e mobile na empresa <a href="http://dellead.com.br" target="_blank">Dell Lead</a>',
+        links: [
+            {name: "GitHub", url: "https://github.com/"},
+            {name: "Linkedin", url: "https://linkedin.com/"},
+            {name: "Twitter", url: "https://twitter.com/"}
+        ]
+    }
+    return res.render("about", {about})
 })
 
 server.get("/portfolio", function(req, res){
-    return res.render("portfolio")
+    return res.render("portfolio",{itens: videos})
 })
 
 // Iniciando o servidor

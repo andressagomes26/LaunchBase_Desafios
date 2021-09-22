@@ -12,83 +12,23 @@
     </div>
 
     <section class='cards'>
-        <div class="card" id='2alg7MQ6_sI'>
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/2alg7MQ6_sI/maxresdefault.jpg" alt="Videoaulas">
-            </div>
-            <div class="card__content">
-                <p>GIT E GITHUB NA PRÁTICA</p>
-            </div>
-            <div class="card__info">
-                <p>60 minutos</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
-
-        <div class="card" id='HN1UjzRSdBk'>
-                <div class="card__image-container">
-                    <img src="https://img.youtube.com/vi/HN1UjzRSdBk/maxresdefault.jpg" alt="Videoaulas">
+        {% for item in itens %}     
+            <div class="card" id='{{item.id}}'>
+                <div class="card__image-container {{ 'featured-wrapper' if  item.featured }}">
+                    <img src="https://img.youtube.com/vi/{{item.id}}/maxresdefault.jpg" alt="{{item.title}}">
+                    {% if item.featured %}
+                        <div class="featured">Featured</div>
+                    {% endif %}
                 </div>
-            <div class="card__content">
-                <p>DESESVENDANDO O CSS GRID NA PRÁTICA</p>
+                <div class="card__content">
+                    <p>{{item.title}}</p>
+                </div>
+                <div class="card__info">
+                    <p>{{item.duration}}</p>
+                    <p class="card__price">{{item.price}}</p>
+                </div>
             </div>
-            <div class="card__info">
-                <p>60 minutos</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
-
-         <div class="card" id='GykTLqODQuU'>
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/GykTLqODQuU/maxresdefault.jpg" alt="Videoaulas">
-            </div>
-            <div class="card__content">
-                <p>FORMULÁRIO ANIMADO COM JS PURO E CSS ANIMATION</p>
-            </div>
-            <div class="card__info">
-                <p>60 minutos</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
-
-        <div class="card" id='c7P03kkrEG8'>
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/c7P03kkrEG8/maxresdefault.jpg" alt="Videoaulas">
-            </div>
-            <div class="card__content">
-                <p>CONFIGURANDO VSCODE</p>
-            </div>
-            <div class="card__info">
-                <p>60 minutos</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
-
-         <div class="card" id='x4FdZd2-_uU'>
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/x4FdZd2-_uU/maxresdefault.jpg" alt="Videoaulas">
-            </div>
-            <div class="card__content">
-                <p>RECRIANDO INTERFACE DO DISCORD</p>
-            </div>
-            <div class="card__info">
-                <p>60 minutos</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
-
-         <div class="card" id='-j7vLmBMsEU'>
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/-j7vLmBMsEU/maxresdefault.jpg" alt="Videoaulas">
-            </div>
-            <div class="card__content">
-                <p>DEPLOY DE APLICAÇÃO</p>
-            </div>
-            <div class="card__info">
-                <p>60 minutos</p>
-                <p class="card__price">Free</p>
-            </div>
-        </div>
+        {% endfor %}
     </section>
 
     <div class="modal-overlay">

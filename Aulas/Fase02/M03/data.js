@@ -4,7 +4,8 @@ module.exports = [
         id: "2alg7MQ6_sI",
         title:"GIT E GITHUB NA PRÁTICA",
         duration:"60 minutos",
-        price:"Free"
+        price:"Free",
+        featured: true
     },
 
     {
@@ -25,7 +26,8 @@ module.exports = [
         id: "c7P03kkrEG8",
         title: "CONFIGURANDO VSCODE",
         duration:"60 minutos",
-        price:"Free"
+        price:"Free",
+        featured: true
     },
 
     {
@@ -39,6 +41,7 @@ module.exports = [
         id: "-j7vLmBMsEU" ,
         title: "DEPLOY DE APLICAÇÃO",
         duration:"60 minutos",
-        price:"Free"
+        price:"Free",
+        featured: true
     },
 ]
