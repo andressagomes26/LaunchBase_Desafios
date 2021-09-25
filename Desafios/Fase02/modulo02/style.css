@@ -1,18 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+:root{
+    --color-gray: rgb(194, 194, 194);
+}
+
 *{
     margin: 0;
 }
 
 body{
-    background: #D4F0F0;
+    background: #121214;
     font-family: 'Roboto', sans-serif;
 }
 
 header{
     padding: 30px;
-    border-bottom: 1px solid rgba(74, 205, 238, 0.3);
+    border-bottom: 1px solid rgba(220, 224, 224, 0.2);
     text-align: center;
+
+    display: grid;
+    align-items: center;
+}
+
+.linksHeader img{
+    max-width: 12vw;
+    margin-right: 28%;
+    
 }
 
 header div a{
@@ -20,11 +33,67 @@ header div a{
     font-size: 18px;
     line-height: 28px;
     text-decoration: none;
-    color: rgb(131, 131, 131);
+    color: var(--color-gray);
 }
 
 header div a:hover{
-    font-weight: bold;
-    text-decoration: underline;
-    transition: 200ms;
+    color: #fff;
+    /*text-decoration: underline;*/
+    border-bottom: 2px solid #641dd6d8;
+    transition: all 400ms;
 }
+
+/* INFO SOBRE*/
+.info-sobre{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 4%; 
+    margin-left: 16%;
+    color: var(--color-gray);
+    position: relative;
+}
+.info-sobre .name{
+    font-size: 54px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+
+}
+
+.info-sobre .descricao{
+    max-width: 65%;
+    margin-left: 8%;
+    margin-top: 20px;
+}
+
+.info-sobre .descricao::before {
+    top: 0;
+    content: "";
+    width: 50px;
+    height: 1px;
+    position: absolute;
+    background: var(--color-gray);
+}
+
+/* CARD SOBRE */
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card{
+    padding: 10% 20% 40% 10%;
+    border: 1px solid var(--color-gray);
+
+    margin: 0 auto;
+    
+}
+.card .titulo-card{
+    font-size: 26px;
+    color: var(--color-gray);
+}
+
+.card img{
+    height: 50%; 
+    width: 50%; 
+}
+    
