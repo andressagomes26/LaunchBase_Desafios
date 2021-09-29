@@ -1,18 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* STYLE PADRÃO */
+
+:root{
+    --color-gray: rgb(194, 194, 194);
+}
+
 *{
     margin: 0;
 }
 
+/* BODY */
+
 body{
-    background: #D4F0F0;
+    background: #121214;
     font-family: 'Roboto', sans-serif;
 }
 
+/* HEADER */
+
 header{
     padding: 30px;
-    border-bottom: 1px solid rgba(74, 205, 238, 0.3);
+    border-bottom: 1px solid rgba(220, 224, 224, 0.2);
     text-align: center;
+
+    display: grid;
+    align-items: center;
+}
+
+.linksHeader img{
+    max-width: 12vw;
+    margin-right: 28%;
+    
 }
 
 header div a{
@@ -20,11 +39,211 @@ header div a{
     font-size: 18px;
     line-height: 28px;
     text-decoration: none;
-    color: rgb(131, 131, 131);
+    color: var(--color-gray);
 }
 
 header div a:hover{
+    color: #fff;
+    /*text-decoration: underline;*/
+    border-bottom: 2px solid #641dd6d8;
+    transition: all 400ms;
+}
+
+/* INFO SOBRE*/
+.info-sobre{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 4%; 
+    margin-left: 16%;
+    color: var(--color-gray);
+    position: relative;
+}
+
+.info-sobre .name{
+    font-size: 54px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+
+}
+
+.info-sobre .descricao{
+    max-width: 65%;
+    margin-left: 8%;
+    margin-top: 20px;
+}
+
+.info-sobre .descricao::before {
+    top: 0;
+    content: "";
+    width: 50px;
+    height: 1px;
+    position: absolute;
+    background: var(--color-gray);
+}
+
+/* CONTENT - SOBRE */
+.content{
+    padding: 4% 6%;
+    border: 1px solid var(--color-gray);
+    margin: 2% auto;
+
+    opacity: 90%;
+
+    max-width: 60%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+}
+
+.content img{
+    margin: 0;
+}
+
+.card-content .paragrafo-card,
+.card-content .titulo-card,
+.card-content ul li{
+    color: #E1E1E6;
+    font-family: 'Roboto', sans-serif;
+    margin: 12px;
+}
+
+.content .titulo-card{
+    font-size: 32px;
     font-weight: bold;
-    text-decoration: underline;
-    transition: 200ms;
+}
+
+.card-content .paragrafo-card,
+.card-content ul li{
+    font-size: 16px;
+    line-height: 26px;
+}
+
+/* LINKS FOOTER SOBRE */
+.links-footer{
+    display: inline;
+    margin-left: 12%;
+    
+}
+
+.links-footer img{
+    width: 36px;
+    margin: 6%;
+    background-color: #fff;
+    border-radius: 50%;
+
+}
+
+.links-footer img:hover{
+    width: 54px;
+    border: 1px solid rgb(123, 33, 196);
+    transition: all 500ms;
+}
+
+/* CARDS CONTEÚDO*/
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1vw;
+
+    margin: 4%;
+    
+}
+
+.card{
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.card img{
+    width: 100%;
+    height: 150%;
+    border-radius: 12px;
+
+    display: block;
+    background-image: linear-gradient(234deg, #394245, #000);
+    opacity: 0.4;
+}
+
+.card .texto-card{
+    position: absolute;
+    top: 6%;
+    left: 4%;
+
+    padding: 4%;
+    color: #E1E1E6;
+    font-family: 'Roboto', sans-serif;
+    max-width: 80%;
+}
+
+.texto-card .titulo-post{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.texto-card .autor-post{
+    font-size: 18px;
+    margin-bottom: 32%;
+}
+
+.texto-card .tempo-post
+{
+    font-size: 16px;
+    color: #e1e1e6b7;
+}
+
+/* MODAL OVERLAY */
+
+.modal-overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    align-items: center;
+
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal{
+    background-color: #fff;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+
+    position: relative;
+}
+
+.modal .icons{
+    position: absolute;
+    right: 8px;
+    top: 4px;
+    
+}
+
+.modal .icons .material-icons{
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.modal iframe{
+    width: 100%;
+    height: 97%;
+    margin-top: 3%
+}
+
+/* MODAL OVERLAY ACTIVE -*/
+.modal-overlay.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal.maximize-active{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
 }

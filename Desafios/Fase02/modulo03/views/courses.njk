@@ -1,0 +1,48 @@
+{% extends "layout.njk" %}
+
+{% block tituloPage %}
+    <title>Cursos</title>
+{% endblock %}
+
+{% block content%}
+    <div class="cards">
+        <div class="card" id='es08-novas-features-no-javascript/'>
+            <img src="https://blog.rocketseat.com.br/content/images/2020/09/es10-novas-features-do-javascript.png" alt="" class="img-card">
+            <div class="texto-card">
+                <p class="titulo-post">ES10 - Novas features do JavaScript</p>
+                <p class="autor-post">por <strong>Thiago Marinho</strong></p>
+                <p class="tempo-post">6 MIN DE LEITURA</p>
+            </div>
+        </div>
+
+        <div class="card" id='es09-novas-features-no-javascript/'>
+            <img src="https://blog.rocketseat.com.br/content/images/2020/08/es09-novas-features-no-javascript.png" alt="" class="img-card">
+            <div class="texto-card">
+                <p class="titulo-post">ES09 - Novas features no JavaScript</p>
+                <p class="autor-post">por <strong>Thiago Marinho</strong></p>
+                <p class="tempo-post">9 MIN DE LEITURA</p>
+            </div>
+        </div>
+
+        <div class="card" id='es10-novas-features-do-javascript/'>
+            <img src="https://blog.rocketseat.com.br/content/images/2020/08/es08-novas-features-no-javascript.png" alt="" class="img-card">
+            <div class="texto-card">
+                <p class="titulo-post">ES08 - Novas features no JavaScript</p>
+                <p class="autor-post">por <strong>Thiago Marinho</strong></p>
+                <p class="tempo-post">5 MIN DE LEITURA</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay">
+        <div class="modal maximize-active">
+            <span class="icons">
+                <span class="material-icons" id='maximize'>maximize</span>
+                <span class="material-icons" id='close'>close</span>
+            </span>
+            <iframe src="" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script src="/scripts.js"></script>
+{% endblock %}
