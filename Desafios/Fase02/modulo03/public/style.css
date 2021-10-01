@@ -247,3 +247,10 @@ header div a:hover{
     height: 100%;
     margin: 0 auto;
 }
+
+/* PAGE CURSO */
+.iframe-course iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
