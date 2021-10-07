@@ -1,0 +1,67 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap';
+
+/* STYLE PADRÃO */
+
+:root{
+    --color-gray: rgb(194, 194, 194);
+    --color-background: #121214;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* BODY */
+
+body{
+    background: var(--color-background);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER */
+
+header{
+    background-color: rgb(16, 1, 24);
+    width: 100%;
+    padding: 32px;
+    
+    border-bottom: 1px solid rgba(220, 224, 224, 0.2);
+    text-align: center;
+    box-sizing: border-box;
+}
+    
+.headerLinks a{
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration: none;
+    color: var(--color-gray);
+
+    position: relative;
+}
+
+.headerLinks .teacher.active{
+    font-weight: bold;
+}
+
+.headerLinks a + a {
+    margin-left: 32px;
+}
+
+.headerLinks a::after{
+    content: "";
+    height: 1px;
+    width: 0;
+
+    background-color: rgba(255, 255, 255, 0.76);
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+}
+
+.headerLinks a:hover::after{
+    width: 100%;
+    background-color: #641dd6d8;
+    transition: all 400ms ease-out 200ms;
+}
