@@ -15,7 +15,7 @@ O LaunchBase é um treinamento no formato de bootcamp que tem o objetivo de abor
 - Visual Studio Code IDE;
 - Postbird;
 
-## Tecnologias <img src = "https://png.pngtree.com/png-clipart/20191120/original/pngtree-rocket-vector-illustration-isolated-on-white-background-rocket-clip-art-png-image_5067341.jpg"  width="40" height="40">
+## Tecnologias 🚀🚀
 
 - HTML;
 - CSS;
