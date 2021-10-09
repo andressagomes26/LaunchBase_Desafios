@@ -5,6 +5,7 @@
 :root{
     --color-gray: rgb(194, 194, 194);
     --color-background: #121214;
+    --color-background-secundary: #08080f;
 }
 
 *{
@@ -23,7 +24,7 @@ body{
 /* HEADER */
 
 header{
-    background-color: rgb(16, 1, 24);
+    background-color: var(--color-background-secundary);
     width: 100%;
     padding: 32px;
     
