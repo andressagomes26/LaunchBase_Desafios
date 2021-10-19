@@ -1,0 +1,13 @@
+{
+    "instructors": [
+        {
+            "id": 1,
+            "avatar_url": "https://www.google.com/",
+            "name": "Andressa Gomes",
+            "birth": 909360000000,
+            "gender": "F",
+            "services": "Musculação",
+            "created_at": 1634675619684
+        }
+    ]
+}
