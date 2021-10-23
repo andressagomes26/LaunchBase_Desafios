@@ -148,3 +148,8 @@ header{
     display: inline-block;
     margin-top: 8px;
 }
+
+/* FORMS*/ 
+input {
+    padding: 2px 8px;
+}
