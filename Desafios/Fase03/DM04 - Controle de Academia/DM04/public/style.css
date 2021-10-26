@@ -6,6 +6,7 @@
     --color-gray: rgb(194, 194, 194);
     --color-background: #121214;
     --color-background-secundary: #08080f;
+    --color-button-submit: #2c0d5dd8;
 }
 
 *{
@@ -150,6 +151,58 @@ header{
 }
 
 /* FORMS*/ 
-input {
-    padding: 2px 8px;
+input,
+select {
+    width: 100%;
+    outline: none;
+    background-color: var(--color-background-secundary);
+
+    color: #555;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+input::placeholder{
+    color: rgb(102, 102, 102);
+    font-weight: normal;
+}
+
+input[type="radio"]{
+    width: initial;
+    margin-right: 4px;
+    display: inline-block;
+    margin-top: 22px;
+    margin-bottom: 16px;
+}
+
+select{ 
+    width: 80%;
+    padding: 8px;
+    font-size: 18px;
+}
+
+.item span:nth-child(1){
+    margin-right: 8px;
+}
+
+.item span{
+    background-color: var(--color-background);
+    padding: 8px 16px;
+    border-radius: 12px;
+}
+
+button[type="submit"]{
+    padding: 8px 32px;
+    border-radius: 8px;
+    margin-top: 32px;
+    
+    background-color: var(--color-button-submit);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+    width: 50%;
+    display: block;
+    margin: 32px auto 8px auto;
 }

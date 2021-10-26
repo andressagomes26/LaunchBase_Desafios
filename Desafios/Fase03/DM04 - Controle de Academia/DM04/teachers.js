@@ -10,14 +10,14 @@ exports.post =  function(req, res){
         }
     }
 
-    let { avatar_url, name, birth, education, typeClass, area } = req.body
+    let { avatar, name, birth, education, typeClass, area } = req.body
     
     birth = Date.parse(birth)
     const id = Number(data.teachers.length + 1)
 
     data.teachers.push({
         id,
-        avatar_url, 
+        avatar, 
         name, 
         birth, 
         education, 

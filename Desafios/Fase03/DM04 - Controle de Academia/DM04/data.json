@@ -1,3 +1,13 @@
 {
-    "teachers": []
+    "teachers": [
+        {
+            "id": 1,
+            "avatar": "https://www.google.com/",
+            "name": "Andressa Gomes",
+            "birth": 909360000000,
+            "education": "EnsinoSuperiorCompleto",
+            "typeClass": "D",
+            "area": "WEB, Desktop"
+        }
+    ]
 }
