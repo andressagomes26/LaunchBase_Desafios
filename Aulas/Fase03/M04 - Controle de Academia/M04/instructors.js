@@ -2,8 +2,42 @@
 const fs = require('fs')
 const data = require('./data.json')
 
+// Mostrar
+exports.show = function(req, res){
+    const { id } = req.params
+
+    const foundInstructors = data.instructors.find(function(instructor){
+        return instructor.id == id
+    })
+
+    if(!foundInstructors) return res.send("Instructor not found!")
+
+    function age(timestamp){
+        const today = new Date()
+        const birth = new Date(timestamp)
+
+        let age = today.getFullYear() - birth.getFullYear()
+        const month = today.getMonth() - birth.getMonth()
+        const day = today.getDate() - birth.getDate()
+
+        if(month < 0 || month == 0 && day <=0 ){
+            age -= 1
+        }
+
+        return age
+    }
+    const instructor = {
+        ...foundInstructors,
+        age: age(foundInstructors.birth),
+        services: foundInstructors.services.split(','),
+        created_at:""
+    }
+
+    return res.render("instructors/show", {instructor})
+}
+
 // create
-exports.namePost = function(req, res){
+exports.post = function(req, res){
     const keys = Object.keys(req.body) 
 
     for(key of keys){
