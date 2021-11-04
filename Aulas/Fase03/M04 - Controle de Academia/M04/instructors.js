@@ -1,6 +1,7 @@
 // Criando funções para o POST
 const fs = require('fs')
 const data = require('./data.json')
+const { age } = require('./utils')
 
 // Mostrar
 exports.show = function(req, res){
@@ -12,25 +13,12 @@ exports.show = function(req, res){
 
     if(!foundInstructors) return res.send("Instructor not found!")
 
-    function age(timestamp){
-        const today = new Date()
-        const birth = new Date(timestamp)
-
-        let age = today.getFullYear() - birth.getFullYear()
-        const month = today.getMonth() - birth.getMonth()
-        const day = today.getDate() - birth.getDate()
-
-        if(month < 0 || month == 0 && day <=0 ){
-            age -= 1
-        }
-
-        return age
-    }
+    
     const instructor = {
         ...foundInstructors,
         age: age(foundInstructors.birth),
         services: foundInstructors.services.split(','),
-        created_at:""
+        created_at: new Intl.DateTimeFormat('pt-Br').format(foundInstructors.created_at)
     }
 
     return res.render("instructors/show", {instructor})
