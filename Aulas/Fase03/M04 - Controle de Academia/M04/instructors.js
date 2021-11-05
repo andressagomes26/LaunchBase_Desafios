@@ -1,7 +1,7 @@
 // Criando funções para o POST
 const fs = require('fs')
 const data = require('./data.json')
-const { age } = require('./utils')
+const { age, date } = require('./utils')
 
 // Mostrar
 exports.show = function(req, res){
@@ -55,4 +55,19 @@ exports.post = function(req, res){
 
         return res.redirect("/instructors")
      })
+}
+
+// edit 
+exports.edit = function(req, res){
+    const { id } = req.params
+
+    const foundInstructors = data.instructors.find(function(instructor){
+        return instructor.id == id
+    })
+
+    if(!foundInstructors) return res.send("Instructor not found!")
+
+    date(foundInstructors.birth)
+    
+    return res.render("instructors/edit", {instructor: foundInstructors})
 }
