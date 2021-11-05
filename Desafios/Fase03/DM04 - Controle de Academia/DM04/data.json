@@ -5,9 +5,10 @@
             "avatar": "https://www.google.com/",
             "name": "Andressa Gomes",
             "birth": 909360000000,
-            "education": "EnsinoSuperiorCompleto",
+            "education": "Mestrado",
             "typeClass": "D",
-            "area": "WEB, Desktop"
+            "area": "WEB, Desktop",
+            "created_at": 1636148088901
         }
     ]
 }
