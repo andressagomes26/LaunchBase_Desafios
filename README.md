@@ -47,7 +47,7 @@ O LaunchBase é um treinamento no formato de bootcamp que tem o objetivo de abor
     $ npm install nunjucks    
     ```
   
-## Desafios <img src = "https://image.flaticon.com/icons/svg/1388/1388007.svg" width="30" height="30">
+## Desafios �💻
 
  ### Fase 02
 * **Fase 2 - Módulo 1 -** Introdução a Programação WEB:
@@ -101,7 +101,7 @@ O LaunchBase é um treinamento no formato de bootcamp que tem o objetivo de abor
 ### Fase 8
 ### Fase 9
 
-## Status do Projeto
+## Status do Projeto 📆📌
 - As resoluções dos desafios encontram-se em desenvolvimento.
 
 ## Licença
