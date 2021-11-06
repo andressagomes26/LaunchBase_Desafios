@@ -8,6 +8,15 @@
             "gender": "F",
             "services": "Musculação",
             "created_at": 1634675619684
+        },
+        {
+            "id": 2,
+            "avatar_url": "https://www.google.com/",
+            "name": "Andressa Gomes Moreira",
+            "birth": 909360000000,
+            "gender": "F",
+            "services": "Musculação",
+            "created_at": 1636157062299
         }
     ]
 }
