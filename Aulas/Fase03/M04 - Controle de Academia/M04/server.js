@@ -4,6 +4,9 @@ const express = require("express")
 // Rodar o nunjucks
 const nunjucks = require("nunjucks")
 
+// Método Override para utilizar os verbos PUT e Delete
+const methodOverride = require('method-override')
+
 // Importar as rotas
 const routes = require("./routes")
 
@@ -15,6 +18,9 @@ server.use(express.urlencoded({ extended: true }))
 
 // Configurar o servidor para usar arquivos estáticos:
 server.use(express.static("public"))
+
+// Configurar o método override
+server.use(methodOverride('_method'))
 
 // Fazer o server usar o routes
 server.use(routes)
