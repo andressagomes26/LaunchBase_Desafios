@@ -191,7 +191,8 @@ select{
     border-radius: 12px;
 }
 
-button[type="submit"]{
+button[type="submit"],
+.button{
     padding: 8px 32px;
     border-radius: 8px;
     margin-top: 32px;
@@ -205,4 +206,14 @@ button[type="submit"]{
     width: 50%;
     display: block;
     margin: 32px auto 8px auto;
+}
+
+.button{
+    text-decoration: none;
+    text-align: center;
+}
+
+.include2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }

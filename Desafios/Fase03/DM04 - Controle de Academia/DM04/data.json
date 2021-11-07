@@ -1,14 +1,29 @@
 {
     "teachers": [
         {
-            "id": 1,
+            "id": "1",
             "avatar": "https://www.google.com/",
-            "name": "Andressa Gomes",
-            "birth": 909360000000,
-            "education": "Mestrado",
-            "typeClass": "D",
+            "name": "Andressa Gomes Moreira",
+            "birth": "1998-04-26",
+            "education": "EnsinoMedioCompleto",
+            "typeClass": "P",
             "area": "WEB, Desktop",
             "created_at": 1636148088901
+        },
+        {
+            "id": 2,
+            "avatar": "https://www.google.com/",
+            "name": "Andressa Gomes Moreira",
+            "birth": 906768000000,
+            "education": "EnsinoMedioCompleto",
+            "typeClass": "D",
+            "area": "WEB, Desktop",
+            "created_at": 1636243387854
+        },
+        {
+            "id": 3,
+            "birth": null,
+            "created_at": 1636243578745
         }
     ]
 }
