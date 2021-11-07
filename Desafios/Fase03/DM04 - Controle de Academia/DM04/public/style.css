@@ -213,7 +213,16 @@ button[type="submit"],
     text-align: center;
 }
 
-.include2{
+.button-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.button-grid button{
+    width: 90%;
+}
+
+#button-delete{
+    background-color: rgb(243, 46, 46);
+    
 }
