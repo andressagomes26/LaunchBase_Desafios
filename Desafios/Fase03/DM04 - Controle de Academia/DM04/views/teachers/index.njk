@@ -5,36 +5,30 @@
 {% endblock%}
 
 {% block content%}
-    <div class="card">
-        <section class="imagem"></section>
-        <section class="detalhes">
-            <div class="title">
-            <h3>Detalhes</h3>
-</div>
-            <div class="item one">
-                <div>Nome completo</div>
-                <div>Andressa Gomes</div>
-            </div>
-            <div class="item">
-                <div>Idade</div>
-                <div>22</div>
-            </div>
-            <div class="item">    
-                <div>Grau de escolaridade</div>
-                <div>Graduação</div>
-            </div>
-            <div class="item">    
-                <div>Tipo de aula</div>
-                <div>Presencial</div>
-            </div>
-            <div class="item">    
-                <div>Acompanhamento</div>
-                <div>Desenvolvimento Web</div>
-            </div>
-            <div class="item">    
-                <div>Desde</div>
-                <div>Outubro 2021</div>
-            </div>
-        </section>
+    <div class="card card-table">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <th>Nome Completo</th>
+                    <th>Acompanhamento</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for teacher in teachers %}
+                    <tr>
+                        <td>{{teacher.name}}</td>
+                        <td>
+                            {% for area in teacher.area %}
+                                <span>{{area}}</span>
+                            {% endfor %}
+                        </td>
+                        <td><a href="/teachers/{{teacher.id}}">Ver</a></td>
+                    </tr>
+                {% endfor %}
+                
+            </tbody>
+        </table>
     </div>
-{% endblock %}s
+{% endblock %}

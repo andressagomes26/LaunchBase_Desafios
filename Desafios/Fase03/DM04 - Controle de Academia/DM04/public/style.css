@@ -7,6 +7,7 @@
     --color-background: #121214;
     --color-background-secundary: #08080f;
     --color-button-submit: #2c0d5dd8;
+    --color-word: rgb(144, 144, 144);
 }
 
 *{
@@ -127,13 +128,13 @@ header{
     line-height: 20px;
     margin-bottom: 2%;
     font-weight: bold;
-    color: rgb(144, 144, 144);
+    color: var(--color-word);
 }
 
 .detalhes .item div:nth-child(2){
     font-size: 16px;
     line-height: 18px;
-    color: rgb(144, 144, 144);
+    color: var(--color-word);
 }
 
 .detalhes .item:last-child div:nth-child(2){
@@ -225,4 +226,55 @@ button[type="submit"],
 #button-delete{
     background-color: rgb(243, 46, 46);
     
+}
+
+/* Table index */
+.card-table {
+    display: block;
+    padding: 32px;
+    box-sizing: border-box;
+    color: var(--color-word);
+    
+}
+
+.card-table table{
+    border-spacing: 0;
+}
+
+.card-table table thead{
+   
+    text-transform: uppercase;
+    color: rgb(184, 186, 187);
+    font-size: 16px;
+}
+
+.card-table table thead th,
+.card-table table tbody tr td{
+    text-align: center;
+}
+
+td, th{
+    padding: 16px;
+    border-bottom: 1px solid #6e6e6e63;
+}
+
+.card-table table tbody tr td a{
+    padding: 8px 16px;
+    border-radius: 4px;
+ 
+    background-color: var(--color-button-submit);
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.card-table table tbody tr td span:nth-child(1){
+    margin-right: 8px;
+}
+
+.card-table table tbody tr td span{
+    background-color: var(--color-background);
+    padding: 8px 16px;
+    border-radius: 12px;
 }

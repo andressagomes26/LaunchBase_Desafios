@@ -2,6 +2,17 @@ const fs = require('fs')
 const data = require('./data.json')
 const { age, graduation, typeClass, date } = require('./utils')
 
+exports.index = function(req, res){
+    const teachers = data.teachers
+
+    for (teacherIndex of teachers){
+            teacherIndex.area = String(teacherIndex.area)
+            teacherIndex.area = teacherIndex.area.split(',')
+    }
+
+    return res.render("teachers/index", { teachers })
+}
+
 exports.show = function(req, res){
     const { id } = req.params
 
@@ -38,6 +49,39 @@ exports.edit = function(req, res){
     }
 
     return res.render("teachers/edit", { teacher })
+}
+
+exports.post =  function(req, res){
+    const keys = Object.keys(req.body) 
+    
+    for(key of keys){
+        if(req.body[key] == ""){  
+            return res.send('Please, fill in all fields!')
+        }
+    }
+
+    let { avatar, name, birth, education, typeClass, area } = req.body
+    
+    birth = Date.parse(birth)
+    const id = Number(data.teachers.length + 1)
+    const created_at = Date.now()
+
+    data.teachers.push({
+        id,
+        avatar, 
+        name, 
+        birth, 
+        education, 
+        typeClass, 
+        area,
+        created_at
+    })
+    
+    fs.writeFile('data.json', JSON.stringify(data, null, 4), function(err){
+        if (err) return res.send("Write file error!")
+
+        return res.redirect("/teachers")
+     })
 }
 
 exports.update = function(req, res){
@@ -81,38 +125,5 @@ exports.delete = function(req, res){
         if (err) return res.send("Write file error!")
 
         return res.redirect(`/teachers`)
-     })
-}
-
-exports.post =  function(req, res){
-    const keys = Object.keys(req.body) 
-    
-    for(key of keys){
-        if(req.body[key] == ""){  
-            return res.send('Please, fill in all fields!')
-        }
-    }
-
-    let { avatar, name, birth, education, typeClass, area } = req.body
-    
-    birth = Date.parse(birth)
-    const id = Number(data.teachers.length + 1)
-    const created_at = Date.now()
-
-    data.teachers.push({
-        id,
-        avatar, 
-        name, 
-        birth, 
-        education, 
-        typeClass, 
-        area,
-        created_at
-    })
-    
-    fs.writeFile('data.json', JSON.stringify(data, null, 4), function(err){
-        if (err) return res.send("Write file error!")
-
-        return res.redirect("/teachers")
      })
 }
