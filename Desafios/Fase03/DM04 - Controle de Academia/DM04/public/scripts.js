@@ -1,8 +1,8 @@
-const cards = document.querySelectorAll(".card")
+const locationMenu = location.pathname
+const MenuAtivo = document.querySelectorAll(".headerLinks a")
 
-for(let card of cards){
-    card.addEventListener('click', function(){
-        const idIframe = card.getAttribute("id")
-        window.location.href = `/course/${idIframe}`
-    })
+for(menu of MenuAtivo){
+    if(locationMenu.includes(menu.getAttribute('href'))){
+        menu.classList.add('active')
+    }
 }

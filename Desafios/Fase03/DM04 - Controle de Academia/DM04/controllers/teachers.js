@@ -1,6 +1,6 @@
 const fs = require('fs')
-const data = require('./data.json')
-const { age, graduation, typeClass, date } = require('./utils')
+const data = require('../data.json')
+const { age, graduation, typeClass, date } = require('../utils')
 
 exports.index = function(req, res){
     const teachers = data.teachers
@@ -13,42 +13,8 @@ exports.index = function(req, res){
     return res.render("teachers/index", { teachers })
 }
 
-exports.show = function(req, res){
-    const { id } = req.params
-
-    const foundTeacher = data.teachers.find(function(teacher){
-        return teacher.id == id
-    })
-
-    if(!foundTeacher) return res.send('Teacher not found')
-
-    const teacher = {
-        ...foundTeacher,
-        age: age(foundTeacher.birth),
-        education: graduation(foundTeacher.education),
-        typeClass: typeClass(foundTeacher.typeClass),
-        area: foundTeacher.area.split(','),
-        created_at: new Intl.DateTimeFormat('pt-Br').format(foundTeacher.created_at)
-    }
-
-    return res.render("teachers/show", {teacher})
-}
-
-exports.edit = function(req, res){
-    const { id } = req.params
-
-    const foundTeacher = data.teachers.find(function(teacher){
-        return teacher.id == id
-    })
-
-    if(!foundTeacher) return res.send('Teacher not found')
-
-    const teacher = {
-        ...foundTeacher,
-        birth: date(foundTeacher.birth)
-    }
-
-    return res.render("teachers/edit", { teacher })
+exports.create = function(req, res){
+    return res.render("teachers/create")
 }
 
 exports.post =  function(req, res){
@@ -84,6 +50,44 @@ exports.post =  function(req, res){
      })
 }
 
+exports.show = function(req, res){
+    const { id } = req.params
+
+    const foundTeacher = data.teachers.find(function(teacher){
+        return teacher.id == id
+    })
+
+    if(!foundTeacher) return res.send('Teacher not found')
+
+    const teacher = {
+        ...foundTeacher,
+        age: age(foundTeacher.birth),
+        education: graduation(foundTeacher.education),
+        typeClass: typeClass(foundTeacher.typeClass),
+        area: foundTeacher.area.toString().split(','),
+        created_at: new Intl.DateTimeFormat('pt-Br').format(foundTeacher.created_at)
+    }
+
+    return res.render("teachers/show", {teacher})
+}
+
+exports.edit = function(req, res){
+    const { id } = req.params
+
+    const foundTeacher = data.teachers.find(function(teacher){
+        return teacher.id == id
+    })
+
+    if(!foundTeacher) return res.send('Teacher not found')
+
+    const teacher = {
+        ...foundTeacher,
+        birth: date(foundTeacher.birth).iso
+    }
+
+    return res.render("teachers/edit", { teacher })
+}
+
 exports.update = function(req, res){
     const { id } = req.body
     let index = 0
@@ -100,7 +104,7 @@ exports.update = function(req, res){
     const teacher = {
         ...foundTeacher,
         ...req.body,
-        birth: date(req.body.birth)
+        birth: date(req.body.birth).iso
     }
 
     data.teachers[index] =  teacher

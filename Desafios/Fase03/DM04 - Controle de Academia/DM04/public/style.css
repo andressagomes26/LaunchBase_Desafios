@@ -44,8 +44,9 @@ header{
     position: relative;
 }
 
-.headerLinks .teacher.active{
+.headerLinks .active{
     font-weight: bold;
+    font-size: 25px;
 }
 
 .headerLinks a + a {

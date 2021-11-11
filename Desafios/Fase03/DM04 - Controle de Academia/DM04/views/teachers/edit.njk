@@ -6,8 +6,8 @@
 
 {% block content%}
 <div class="card">
-    <section class="imagem"></section>
-    
+    <section style="background: url({{teacher.avatar}}) no-repeat center center / cover"></section>
+   
     <section class="detalhes">
         <div class="title">
             <h3>Editar Professor</h3>
@@ -16,11 +16,13 @@
             <input type="hidden" name="id" value={{teacher.id}}>
             {% include 'teachers/fields.njk' %}
         </form>    
-        <form class="include" method="POST" action="/teachers?_method=DELETE">
+        <form id='form-delete' class="include" method="POST" action="/teachers?_method=DELETE">
             <input type="hidden" name="id" value={{teacher.id}}>
                 <button id="button-delete" type="submit">Deletar</button>
             </span>
         </form>
+
+        {% include '../confirm.njk' %}
     </section>
 </div>
 {% endblock %}
