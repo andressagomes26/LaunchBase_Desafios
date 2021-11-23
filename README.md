@@ -87,7 +87,7 @@ O LaunchBase é um treinamento no formato de bootcamp que tem o objetivo de abor
 * **Fase 3 - Módulo 2 -** Persistindo dados da aplicação:
 
   - **Desafio 01:** [Refatorando aplicação e configurando o BD;](https://github.com/andressagomes26/LaunchBase_Desafios/tree/master/Fase03/Modulo02/Desafio01)
-  - **Desafio 02:** [Interagindo com o BD;](https://github.com/andressagomes26/LaunchBase_Desafios/tree/master/Fase03/Modulo02/Desafio02)
+  - **Desafio 02:** [Interagindo com o BD;](https://github.com/andressagomes26/LaunchBase_Desafios/blob/master/Desafios/Fase03/DM05%20-%20Persistindo%20Dados%20da%20Aplica%C3%A7%C3%A3o/05-2-interagindo-bd.md)
   - **Desafio 03:** [Relacionamentos e filtros no BD;](https://github.com/andressagomes26/LaunchBase_Desafios/tree/master/Fase03/Modulo02/Desafio03)
   - **Desafio 04:** [Paginação de resultados no BD.](https://github.com/andressagomes26/LaunchBase_Desafios/tree/master/Fase03/Modulo02/Desafio04)
 
