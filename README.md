@@ -76,13 +76,13 @@ O LaunchBase é um treinamento no formato de bootcamp que tem o objetivo de abor
  
 * **Fase 3 - Módulo 1 -** Controle de academia:
 
-  - **Desafio 01:** [Header;](https://github.com/andressagomes26/LaunchBase-fase03-desafios/tree/master/Modulo01/Desafio01)
-  - **Desafio 02:** [Card do Professor;](https://github.com/andressagomes26/LaunchBase-fase03-desafios/tree/master/Modulo01/Desafio02)
-  - **Desafio 03:** [Formulário e Rota de cadastro do Professor;](https://github.com/andressagomes26/LaunchBase-fase03-desafios/tree/master/Modulo01/Desafio03)
-  - **Desafio 04:** [Apresentação, edição e formatação dos dados de um professor;](https://github.com/andressagomes26/LaunchBase-fase03-desafios/tree/master/Modulo01/Desafio04)
-  - **Desafio 05:** [HTTP: PUT e DELETE;](https://github.com/andressagomes26/LaunchBase-fase03-desafios/tree/master/Modulo01/Desafio05)
-  - **Desafio 06:** [Listagem de professores;](https://github.com/andressagomes26/LaunchBase-fase03-desafios/tree/master/Modulo01/Desafio06)
-  - **Desafio 07:** [Estruturando estudantes.](https://github.com/andressagomes26/LaunchBase-fase03-desafios/tree/master/Modulo01/Desafio07)
+  - **Desafio 01:** [Header;]()
+  - **Desafio 02:** [Card do Professor;]( )
+  - **Desafio 03:** [Formulário e Rota de cadastro do Professor;]( )
+  - **Desafio 04:** [Apresentação, edição e formatação dos dados de um professor;](h )
+  - **Desafio 05:** [HTTP: PUT e DELETE;]( )
+  - **Desafio 06:** [Listagem de professores;]( )
+  - **Desafio 07:** [Estruturando estudantes.]( )
 
 * **Fase 3 - Módulo 2 -** Persistindo dados da aplicação:
 
